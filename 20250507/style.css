@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+#stage {
+    width: 800px;
+    height: 450px;
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    margin: 100px auto 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#text-wrapper {
+    width: 800px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#count, #score {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#count span, #score span {
+    font-size: 28px;
+}
+
+#bgmBtn {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: turquoise;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+
+#bgmBtn:hover {
+    filter: brightness(1.1);
+}
+
+#start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.chara {
+    width: 30px;
+    height: 30px;
+    background: url(img/Monster.png) no-repeat top;
+    background-size: contain;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+}
